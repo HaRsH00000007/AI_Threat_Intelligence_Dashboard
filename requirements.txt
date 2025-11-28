@@ -1,0 +1,16 @@
+# Core Dependencies
+streamlit
+groq
+
+# Data Processing
+pandas
+numpy
+
+# Machine Learning (Optional - for clustering/similarity)
+scikit-learn
+
+# Utilities
+python-dotenv
+
+# Date/Time
+python-dateutil
