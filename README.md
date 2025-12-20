@@ -1,114 +1,90 @@
-# 🛡️ AI-Driven Cyber Security Threat Intelligence Dashboard
+# 🛡️ AI Threat Intelligence Dashboard
 
-An advanced **AI-powered Threat Intelligence Dashboard** built using **Streamlit**, **Groq LLMs**, and **hybrid IOC analysis**.  
-This system enables real-time monitoring, threat classification, IOC extraction, SOC-grade report generation, and vector embeddings for cyber security intelligence workflows.
+An **AI-driven Cyber Security Threat Intelligence Dashboard** that leverages **Large Language Models (LLMs)** to assist Blue Teams and SOC analysts in **threat classification, IOC extraction, automated report generation, and threat intelligence analysis**.
 
----
-
-## ⚡ Overview
-
-This project provides a **full end-to-end cyber threat intelligence system** with:
-
-- 🔴 **Live Threat Feed**
-- 🔍 **Threat Classification (Groq LLM-powered)**
-- 🎯 **IOC Extraction (Regex + AI Hybrid)**
-- 📄 **Automated SOC Threat Report Generation**
-- 🧬 **Embedding Generation for Threat Similarity**
-- 🧠 **Groq LLM Integration (Mixtral + Llama Models)**
-
-Built for Blue Teams, SOC Analysts, Researchers, and Cyber-Defense Automation.
+This project explores how **AI + Cyber Security** can work together to reduce manual effort in log analysis, threat triage, and incident reporting.
 
 ---
 
-## 🧩 Key Features
+## 🚀 Project Motivation
 
-### 🔥 1. AI Threat Classification
-Classifies threat text into:
-- Malware  
-- Ransomware  
-- Phishing  
-- DDoS  
-- APT  
-- Data Breach  
-- Insider Threat  
-- Other  
+Cyber security teams deal with massive amounts of logs, alerts, and threat intelligence data every day.  
+Manual analysis is time-consuming and error-prone.
 
-Outputs include:
-- Threat type  
-- Severity (Low → Critical)  
-- Confidence score  
-- Summary  
-- Key indicators  
-- Recommendations  
+This project was built to experiment with:
+- How **LLMs can assist SOC workflows**
+- How AI can **classify threats from raw logs**
+- How Indicators of Compromise (IOCs) can be **automatically extracted**
+- How **SOC-grade reports** can be generated using AI
+
+The goal is not to replace analysts, but to **augment Blue Team operations** using AI.
 
 ---
 
-### 🎯 2. IOC Extractor
-Hybrid detection combining:
-- **Regex extraction** (IPs, URLs, hashes, emails, filenames)
-- **Groq Mixtral LLM refinement**
-- **AI-only mode**
+## 🧠 What This Project Does
 
-Supports:
-- IPv4 addresses  
-- URL indicators  
-- Email indicators  
-- MD5/SHA1/SHA256 hashes  
-- Suspicious filenames  
+The dashboard provides **five core capabilities**:
+
+### 🔴 Live Threat Feed
+- Displays real-time (mock) threat intelligence events
+- Includes brute-force attempts, phishing URLs, malware hashes, and C2 indicators
+- Designed to be easily extendable to real feeds (OTX, VirusTotal, MISP, AbuseIPDB)
 
 ---
 
-### 📝 3. SOC-Grade Threat Report Generator
-Automatically produces structured JSON reports containing:
-- Executive summary  
-- Threat analysis  
-- Risk level (Critical → Low)  
-- Impact assessment  
-- Extracted IOCs  
-- Recommended mitigations  
-- MITRE-style behavior mapping (AI generated)  
+### 🔍 AI-Powered Threat Classification
+- Classifies raw threat text or logs using **Groq Mixtral LLM**
+- Outputs:
+  - Threat type (Malware, Phishing, Ransomware, DDoS, APT, etc.)
+  - Severity level
+  - Confidence score
+  - Summary
+  - Key indicators
+  - Recommended actions
 
-Fully customizable:
-- Include/Exclude IOCs  
-- Include/Exclude recommendations  
-- Select report type  
-  - Executive Summary  
-  - Technical Analysis  
-  - Incident Response  
-  - Full Report  
+This simulates **SOC alert triage automation**.
 
 ---
 
-### 🧬 4. Embedding Generator (Groq Llama 3 Embeddings)
-Creates embeddings for:
-- Threat logs  
-- Alerts  
-- Intelligence notes  
-- IOCs  
-- Incident descriptions  
+### 🎯 IOC Extraction (Hybrid Regex + AI)
+- Extracts **Indicators of Compromise (IOCs)** such as:
+  - IP addresses
+  - URLs / domains
+  - File hashes (MD5 / SHA1 / SHA256)
+  - Email addresses
+  - Suspicious filenames
+- Supports three modes:
+  - Regex Only
+  - AI Only
+  - Hybrid (Regex + LLM enhancement)
 
-Useful for:
-- Similarity matching  
-- Clustering  
-- Threat correlation  
-- Semantic search  
+Hybrid mode provides higher accuracy by combining deterministic rules with AI reasoning.
 
 ---
 
-### 🔴 5. Live Threat Feed (Mock)
-Shows 100% UI-compatible threat items such as:
-- Brute-force attempts  
-- Phishing URLs  
-- Malware hashes  
-- C2 infrastructure  
-- Suspicious connections  
+### 📄 SOC-Grade Threat Report Generator
+- Automatically generates structured cyber security reports using LLMs
+- Report includes:
+  - Executive summary
+  - Threat analysis
+  - Impact assessment
+  - Risk level
+  - IOCs
+  - Recommended mitigations
+- Output is **clean JSON**, ready for:
+  - Incident response documentation
+  - Ticketing systems
+  - SOC reporting
 
-You can later replace mock feeds with:
-- OTX  
-- AbuseIPDB  
-- PhishTank  
-- MISP  
-- VirusTotal  
+---
+
+### 🧬 Threat Intelligence Embedding Generator
+- Generates vector embeddings for threat data
+- Useful for:
+  - Threat similarity analysis
+  - Clustering related incidents
+  - Semantic search
+  - Building threat intelligence knowledge bases
 
 ---
 
