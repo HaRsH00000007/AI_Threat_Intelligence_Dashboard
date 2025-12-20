@@ -2,22 +2,22 @@
 
 An **AI-driven Cyber Security Threat Intelligence Dashboard** that leverages **Large Language Models (LLMs)** to assist Blue Teams and SOC analysts in **threat classification, IOC extraction, automated report generation, and threat intelligence analysis**.
 
-This project explores how **AI + Cyber Security** can work together to reduce manual effort in log analysis, threat triage, and incident reporting.
+This project demonstrates how **AI meets Cyber Security** to reduce manual effort in log analysis, threat triage, and incident reporting.
 
 ---
 
 ## 🚀 Project Motivation
 
-Cyber security teams deal with massive amounts of logs, alerts, and threat intelligence data every day.  
+Cyber security teams process huge volumes of logs, alerts, and threat intelligence every day.  
 Manual analysis is time-consuming and error-prone.
 
-This project was built to experiment with:
+This project was built to explore:
 - How **LLMs can assist SOC workflows**
 - How AI can **classify threats from raw logs**
-- How Indicators of Compromise (IOCs) can be **automatically extracted**
-- How **SOC-grade reports** can be generated using AI
+- How IOCs can be **automatically extracted**
+- How **SOC-grade threat reports** can be generated using AI
 
-The goal is not to replace analysts, but to **augment Blue Team operations** using AI.
+The goal is not to replace analysts, but to **augment Blue Team operations**.
 
 ---
 
@@ -26,23 +26,23 @@ The goal is not to replace analysts, but to **augment Blue Team operations** usi
 The dashboard provides **five core capabilities**:
 
 ### 🔴 Live Threat Feed
-- Displays real-time (mock) threat intelligence events
+- Displays real-time (mock) cyber threat events
 - Includes brute-force attempts, phishing URLs, malware hashes, and C2 indicators
-- Designed to be easily extendable to real feeds (OTX, VirusTotal, MISP, AbuseIPDB)
+- Easily extendable to real feeds (OTX, MISP, VirusTotal, AbuseIPDB)
 
 ---
 
 ### 🔍 AI-Powered Threat Classification
 - Classifies raw threat text or logs using **Groq Mixtral LLM**
 - Outputs:
-  - Threat type (Malware, Phishing, Ransomware, DDoS, APT, etc.)
+  - Threat type
   - Severity level
   - Confidence score
   - Summary
   - Key indicators
   - Recommended actions
 
-This simulates **SOC alert triage automation**.
+Simulates SOC alert triage automation.
 
 ---
 
@@ -58,23 +58,18 @@ This simulates **SOC alert triage automation**.
   - AI Only
   - Hybrid (Regex + LLM enhancement)
 
-Hybrid mode provides higher accuracy by combining deterministic rules with AI reasoning.
-
 ---
 
 ### 📄 SOC-Grade Threat Report Generator
 - Automatically generates structured cyber security reports using LLMs
-- Report includes:
+- Includes:
   - Executive summary
   - Threat analysis
   - Impact assessment
   - Risk level
   - IOCs
   - Recommended mitigations
-- Output is **clean JSON**, ready for:
-  - Incident response documentation
-  - Ticketing systems
-  - SOC reporting
+- Output is **clean JSON**, ready for incident response workflows
 
 ---
 
@@ -90,6 +85,7 @@ Hybrid mode provides higher accuracy by combining deterministic rules with AI re
 
 ## 🏗️ System Architecture
 
+```text
 Streamlit UI (app.py)
 │
 ├── Services Layer
@@ -113,16 +109,13 @@ Streamlit UI (app.py)
 │
 └── Utils Layer
     ├── logger.py
-    │     └── Application & error logging
+    │     └── Logging utilities
     │
     ├── formatter.py
-    │     └── Output & UI formatting
+    │     └── Output formatting
     │
     └── text_cleaner.py
-          └── Text preprocessing & normalization
+          └── Text preprocessing
 
 
-
-
-
-
+## 📁 Project Structure
