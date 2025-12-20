@@ -89,6 +89,7 @@ Hybrid mode provides higher accuracy by combining deterministic rules with AI re
 ---
 
 ## 🏗️ System Architecture
+
 Streamlit UI (app.py)
 │
 ├── Services Layer
