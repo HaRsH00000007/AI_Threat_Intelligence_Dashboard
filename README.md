@@ -119,4 +119,33 @@ Streamlit UI (app.py)
 ```
 ---
 ## 📁 Project Structure
+```text
+AI_Threat_Intelligence_Dashboard/
+│
+├── app.py
+├── requirements.txt
+│
+├── services/
+│   ├── groq_client.py
+│   ├── classifier_service.py
+│   ├── ioc_extractor.py
+│   ├── report_service.py
+│   ├── feed_service.py
+│   └── vector_service.py
+│
+├── utils/
+│   ├── logger.py
+│   ├── formatter.py
+│   └── text_cleaner.py
+│
+├── data/
+│   ├── logs/
+│   ├── vectors/
+│   └── stored_reports/
+│
+└── .streamlit/
+    ├── secrets.toml
+    └── config.toml
+```
+
 
