@@ -147,5 +147,31 @@ AI_Threat_Intelligence_Dashboard/
     ├── secrets.toml
     └── config.toml
 ```
+---
+## 🔑 Groq API Key Setup
+Create the file:
+```text
+.streamlit/secrets.toml
+```
+Add your API key:
+```text
+GROQ_API_KEY = "your_groq_api_key_here"
+```
+⚠️ Do NOT store API keys in config.toml
+---
+## ⚙️ Installation & Setup
+```text
+git clone https://github.com/HaRsH00000007/AI_Threat_Intelligence_Dashboard
+cd AI_Threat_Intelligence_Dashboard
+
+python -m venv venv
+venv\Scripts\activate   # Windows
+
+pip install -r requirements.txt
+
+```
+---
+
+
 
 
