@@ -116,6 +116,7 @@ Streamlit UI (app.py)
     │
     └── text_cleaner.py
           └── Text preprocessing
-
-
+```
+---
 ## 📁 Project Structure
+
