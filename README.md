@@ -92,16 +92,34 @@ Hybrid mode provides higher accuracy by combining deterministic rules with AI re
 Streamlit UI (app.py)
 │
 ├── Services Layer
-│ ├── groq_client.py → Groq API wrapper
-│ ├── classifier_service.py → Threat classification
-│ ├── ioc_extractor.py → IOC extraction logic
-│ ├── report_service.py → Threat report generation
-│ ├── feed_service.py → Live threat feed
-│ └── vector_service.py → Embedding generation
+│   ├── groq_client.py
+│   │     └── Groq API wrapper (LLM calls & embeddings)
+│   │
+│   ├── classifier_service.py
+│   │     └── AI-powered threat classification
+│   │
+│   ├── ioc_extractor.py
+│   │     └── Hybrid IOC extraction (Regex + LLM)
+│   │
+│   ├── report_service.py
+│   │     └── SOC-grade threat report generation
+│   │
+│   ├── feed_service.py
+│   │     └── Live threat feed (mock / API-ready)
+│   │
+│   └── vector_service.py
+│         └── Threat embedding generation
 │
 └── Utils Layer
-├── logger.py → Logging utilities
-├── formatter.py → Output formatting
-└── text_cleaner.py → Text preprocessing
+    ├── logger.py
+    │     └── Application & error logging
+    │
+    ├── formatter.py
+    │     └── Output & UI formatting
+    │
+    └── text_cleaner.py
+          └── Text preprocessing & normalization
+
+
 
 
